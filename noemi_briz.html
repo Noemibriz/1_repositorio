@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>¡Bienvenido a mi primer repositorio!</title>
+    <style>
+      :root{--bg:#0f172a;--card:#0b1220;--accent:#7c3aed;--muted:#9aa4c0}
+      html,body{height:100%;margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial}
+      body{display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--bg),#071020);color:#e6eef8}
+      .card{max-width:760px;width:90%;background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));border-radius:12px;padding:28px;box-shadow:0 10px 30px rgba(2,6,23,0.6);border:1px solid rgba(255,255,255,0.03)}
+      h1{margin:0 0 6px;font-size:22px}
+      p{margin:0 0 14px;color:var(--muted)}
+      .buttons{display:flex;gap:10px;margin-top:12px}
+      a.btn{padding:8px 12px;border-radius:8px;text-decoration:none;font-weight:600;background:rgba(255,255,255,0.03);color:inherit;border:1px solid rgba(255,255,255,0.04)}
+      a.btn.primary{background:linear-gradient(90deg,var(--accent),#4f46e5);color:#fff;border:none}
+      code{background:rgba(0,0,0,0.25);padding:4px 6px;border-radius:6px;font-family:Consolas,monospace;font-size:13px}
+      footer{margin-top:18px;color:var(--muted);font-size:13px}
+    </style>
+  </head>
+  <body>
+    <article class="card">
+      <h1>👋 ¡Bienvenido a mi primer repositorio en GitHub!</h1>
+      <p>Este pequeño repositorio contiene ejemplos y notas para empezar. Aquí encontrarás archivos HTML, CSS y (si quieres) JavaScript básicos para experimentar.</p>
+      <p>Consejos rápidos:</p>
+      <ul>
+        <li>Clona el repositorio: <code>git clone &lt;url-del-repo&gt;</code></li>
+        <li>Abre <code>index.html</code> en tu navegador para ver la página de bienvenida.</li>
+        <li>Haz cambios, crea ramas y prueba <code>git add</code>, <code>git commit</code> y <code>git push</code>.</li>
+      </ul>
+      <div class="buttons">
+        <a class="btn primary" href="#">Ver archivo index.html</a>
+        <a class="btn" href="#">Crear nuevo branch</a>
+      </div>
+      <footer>¿Necesitas que genere un README.md o una plantilla de GitHub Actions? Pídemelo y te lo creo.</footer>
+    </article>
+  </body>
+</html>
