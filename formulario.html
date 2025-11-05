@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Opción 3 - Formulario de Contacto</title>
+    <style>
+      :root {
+        --fondo: #f4f6fb;
+        --principal: #2563eb;
+        --secundario: #60a5fa;
+        --texto: #1e293b;
+        --tarjeta: #ffffff;
+        --sombra: rgba(0, 0, 0, 0.1);
+      }
+      body {
+        margin: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(120deg, var(--secundario), var(--fondo));
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        color: var(--texto);
+      }
+      .card {
+        background: var(--tarjeta);
+        border-radius: 16px;
+        box-shadow: 0 10px 25px var(--sombra);
+        padding: 32px 40px;
+        max-width: 600px;
+        width: 90%;
+        text-align: center;
+        animation: aparecer 1.2s ease;
+      }
+      @keyframes aparecer {
+        from { opacity: 0; transform: translateY(30px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      h1 {
+        font-size: 26px;
+        color: var(--principal);
+        margin-bottom: 20px;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        text-align: left;
+      }
+      label {
+        font-weight: 600;
+      }
+      input, textarea {
+        padding: 10px;
+        border-radius: 8px;
+        border: 1px solid #cbd5e1;
+        font-size: 15px;
+        resize: none;
+      }
+      input:focus, textarea:focus {
+        outline: none;
+        border-color: var(--principal);
+        box-shadow: 0 0 5px rgba(37,99,235,0.4);
+      }
+      button {
+        background: var(--principal);
+        color: white;
+        border: none;
+        padding: 12px;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background 0.3s ease;
+      }
+      button:hover {
+        background: #1d4ed8;
+      }
+      footer {
+        margin-top: 20px;
+        font-size: 14px;
+        color: #64748b;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="card">
+      <h1>📬 Formulario de Contacto</h1>
+      <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" placeholder="tucorreo@ejemplo.com" required>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje..." required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+      <footer>© 2025 - Proyecto educativo · IES Pablo Serrano</footer>
+    </main>
+  </body>
+</html>
