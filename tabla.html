@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Opción 2 - Tabla de información</title>
+    <style>
+      :root {
+        --fondo: #f4f6fb;
+        --principal: #2563eb;
+        --secundario: #60a5fa;
+        --texto: #1e293b;
+        --tarjeta: #ffffff;
+        --sombra: rgba(0, 0, 0, 0.1);
+      }
+      body {
+        margin: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(120deg, var(--secundario), var(--fondo));
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        color: var(--texto);
+      }
+      .card {
+        background: var(--tarjeta);
+        border-radius: 16px;
+        box-shadow: 0 10px 25px var(--sombra);
+        padding: 32px 40px;
+        max-width: 700px;
+        text-align: center;
+        animation: aparecer 1.2s ease;
+      }
+      @keyframes aparecer {
+        from { opacity: 0; transform: translateY(30px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      h1 {
+        font-size: 26px;
+        color: var(--principal);
+        margin-bottom: 20px;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+      }
+      th, td {
+        border: 1px solid #d1d5db;
+        padding: 10px;
+        text-align: center;
+      }
+      th {
+        background-color: var(--principal);
+        color: white;
+      }
+      tr:nth-child(even) {
+        background-color: #f1f5f9;
+      }
+      footer {
+        margin-top: 20px;
+        font-size: 14px;
+        color: #64748b;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="card">
+      <h1>📅 Horario de Clases - ASIR</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>Día</th>
+            <th>Asignatura</th>
+            <th>Hora</th>
+            <th>Aula</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Lunes</td>
+            <td>Redes</td>
+            <td>08:00 - 10:00</td>
+            <td>204</td>
+          </tr>
+          <tr>
+            <td>Martes</td>
+            <td>Sistemas Operativos</td>
+            <td>10:00 - 12:00</td>
+            <td>103</td>
+          </tr>
+          <tr>
+            <td>Miércoles</td>
+            <td>Seguridad Informática</td>
+            <td>12:00 - 14:00</td>
+            <td>302</td>
+          </tr>
+          <tr>
+            <td>Jueves</td>
+            <td>Administración de Bases de Datos</td>
+            <td>08:00 - 10:00</td>
+            <td>305</td>
+          </tr>
+          <tr>
+            <td>Viernes</td>
+            <td>Servicios en Red</td>
+            <td>10:00 - 12:00</td>
+            <td>210</td>
+          </tr>
+        </tbody>
+      </table>
+      <footer>© 2025 - Proyecto educativo · IES Pablo Serrano</footer>
+    </main>
+  </body>
+</html>
